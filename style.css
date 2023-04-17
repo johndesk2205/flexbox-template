@@ -1,4 +1,62 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+header,
+footer {
+    display: flex;
+    border: 2px solid black;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+main>section {
+    display: flex;
+    padding: 20px;
+}
+
+section article:nth-child(2) {
+    flex-grow: 1;
+    background-color: rgb(228, 47, 40);
+}
+
+article {
+    width: 20vw;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.imagens {
+display: flex;
+flex-wrap: wrap;
 }
